@@ -1,0 +1,4 @@
+interface:
+  display_name: "iOS 页面快速预览"
+  short_description: "通过模拟器 XCTest 真实页面宿主生成截图，导出并直接展示修改效果"
+  default_prompt: "使用 $ios-simulator-page 通过真实页面 XCTest 宿主捕获修改后的页面，导出截图并直接展示。"
