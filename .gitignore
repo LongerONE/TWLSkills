@@ -3,3 +3,8 @@
 
 # macOS metadata
 .DS_Store
+
+# Local agent and code-index state
+.claude-flow/
+.swarm/
+ruvector.db

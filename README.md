@@ -21,7 +21,8 @@ TWLSkills 用于整理、维护和分享个人整理或开发的 Agent Skills，
 
 | Skill | 作用 | 跳转 |
 | --- | --- | --- |
-| [ios-simulator-page](iOS/ios-simulator-page/SKILL.md) | 通过真实页面 XCTest 宿主捕获 iOS 模拟器页面，并导出、检查和展示截图。 | [打开目录](iOS/ios-simulator-page/) |
+| [ios-simulator-page](iOS/ios-simulator-page/SKILL.md) | 使用真实页面 XCTest 宿主捕获模拟器渲染，经 xcresult 导出 PNG、检查并展示页面效果；适合快速静态预览。 | [打开目录](iOS/ios-simulator-page/) |
+| [iphone-duo-adapter](iOS/iphone-duo-adapter/SKILL.md) | 只读扫描现有 iOS 工程，整理源码命中、工程清单、候选建议和人工核验项；静态扫描不代表适配通过，修改 app 前需获批。 | [打开目录](iOS/iphone-duo-adapter/) |
 
 ## 仓库结构
 
@@ -29,11 +30,18 @@ TWLSkills 用于整理、维护和分享个人整理或开发的 Agent Skills，
 .
 ├── .gitignore
 ├── iOS/
-│   └── ios-simulator-page/
-│       ├── agents/
-│       │   └── openai.yaml
+│   ├── ios-simulator-page/
+│   │   ├── agents/
+│   │   │   └── openai.yaml
+│   │   ├── scripts/
+│   │   │   └── select_simulator.py
+│   │   └── SKILL.md
+│   └── iphone-duo-adapter/
+│       ├── references/
+│       │   ├── device-facts.md
+│       │   └── fix-guide.md
 │       ├── scripts/
-│       │   └── select_simulator.py
+│       │   └── duo_adapt.py
 │       └── SKILL.md
 ├── assets/
 │   └── twl-skills-logo.png
